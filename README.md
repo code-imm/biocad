@@ -1,5 +1,7 @@
 # BIOCAD
 
+## URL: https://code-imm.github.io/biocad
+
 ## 📦 Available Scripts
 
 | Script              | Description                                                 |
@@ -12,6 +14,36 @@
 | `npm run predeploy` | Automatically runs `build` before deployment.               |
 
 > 💡 To deploy, make sure the `gh-pages` branch is configured correctly and the repository is set up for GitHub Pages.
+
+## 🛠 Prerequisites
+
+Ensure the following are installed:
+
+* [Node.js](https://nodejs.org/)
+* [npm](https://www.npmjs.com/)
+* [Vite](https://vitejs.dev/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [gh-pages](https://github.com/tschaub/gh-pages) (for deployment)
+
+To install all dependencies:
+
+```bash
+npm install
+```
+
+## 🚀 Deployment
+
+To deploy to GitHub Pages:
+
+1. Make sure your repository has GitHub Pages enabled.
+2. Set the deploy branch to `gh-pages` (in repo settings).
+3. Run:
+
+```bash
+npm run deploy
+```
+
+This will build the app and publish the `build/` folder to the `gh-pages` branch.
 
 ## Expanding the ESLint configuration
 
@@ -58,33 +90,3 @@ export default tseslint.config({
   },
 })
 ```
-
-## 🛠 Prerequisites
-
-Ensure the following are installed:
-
-* [Node.js](https://nodejs.org/)
-* [npm](https://www.npmjs.com/)
-* [Vite](https://vitejs.dev/)
-* [TypeScript](https://www.typescriptlang.org/)
-* [gh-pages](https://github.com/tschaub/gh-pages) (for deployment)
-
-To install all dependencies:
-
-```bash
-npm install
-```
-
-## 🚀 Deployment
-
-To deploy to GitHub Pages:
-
-1. Make sure your repository has GitHub Pages enabled.
-2. Set the deploy branch to `gh-pages` (in repo settings).
-3. Run:
-
-```bash
-npm run deploy
-```
-
-This will build the app and publish the `build/` folder to the `gh-pages` branch.
