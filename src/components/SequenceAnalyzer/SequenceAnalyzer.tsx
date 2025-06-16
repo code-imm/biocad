@@ -32,28 +32,17 @@ export function SequenceAnalyzer() {
     >
       <Box sx={{ p: { xs: 2, sm: 3, md: 4 }, mb: { xs: 2, sm: 3, md: 4 } }}>
         <Typography
-          variant="h4"
+          variant="h1"
           align="center"
           gutterBottom
           sx={{
             color: "primary.main",
             fontWeight: "bold",
+            mb: { xs: 2, sm: 3, md: 4 },
             fontSize: { xs: "1.2rem", sm: "2rem", md: "2.125rem" },
           }}
         >
-          Анализатор аминокислотных последовательностей
-        </Typography>
-
-        <Typography
-          variant="subtitle1"
-          align="center"
-          sx={{
-            color: "text.secondary",
-            mb: { xs: 2, sm: 3, md: 4 },
-            fontSize: { xs: "0.875rem", sm: "1rem" },
-          }}
-        >
-          Инструмент для выравнивания и анализа белковых последовательностей
+          Инструмент для выравнивания белковых последовательностей
         </Typography>
 
         <SequenceForm
