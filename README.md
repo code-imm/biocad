@@ -1,11 +1,17 @@
-# React + TypeScript + Vite
+# BIOCAD
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📦 Available Scripts
 
-Currently, two official plugins are available:
+| Script              | Description                                                 |
+| ------------------- | ----------------------------------------------------------- |
+| `npm run dev`       | Runs the development server with hot module replacement.    |
+| `npm run build`     | Type-checks the project and builds it using Vite.           |
+| `npm run preview`   | Serves the production build locally.                        |
+| `npm run lint`      | Runs ESLint over the project.                               |
+| `npm run deploy`    | Deploys the contents of the `build` folder to GitHub Pages. |
+| `npm run predeploy` | Automatically runs `build` before deployment.               |
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> 💡 To deploy, make sure the `gh-pages` branch is configured correctly and the repository is set up for GitHub Pages.
 
 ## Expanding the ESLint configuration
 
@@ -52,3 +58,33 @@ export default tseslint.config({
   },
 })
 ```
+
+## 🛠 Prerequisites
+
+Ensure the following are installed:
+
+* [Node.js](https://nodejs.org/)
+* [npm](https://www.npmjs.com/)
+* [Vite](https://vitejs.dev/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [gh-pages](https://github.com/tschaub/gh-pages) (for deployment)
+
+To install all dependencies:
+
+```bash
+npm install
+```
+
+## 🚀 Deployment
+
+To deploy to GitHub Pages:
+
+1. Make sure your repository has GitHub Pages enabled.
+2. Set the deploy branch to `gh-pages` (in repo settings).
+3. Run:
+
+```bash
+npm run deploy
+```
+
+This will build the app and publish the `build/` folder to the `gh-pages` branch.
